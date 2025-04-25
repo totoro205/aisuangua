@@ -18,4 +18,4 @@ ENV STREAMLIT_SERVER_PORT=8080
 EXPOSE 8080
 
 # 啟動 Streamlit 應用
-CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "ai算卦.py", "--server.port=8080", "--server.address=0.0.0.0"]

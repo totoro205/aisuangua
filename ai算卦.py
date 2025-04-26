@@ -41,7 +41,7 @@ def ai_interpret(question: str, gua: str, line_change: int, api_key: str) -> str
     }
 
     try:
-        with httpx.Client(timeout=30.0) as client:
+        with httpx.Client(timeout=60.0) as client:
             response = client.post(url, headers=headers, json=data)
             response.raise_for_status()
             return response.json()["choices"][0]["message"]["content"].strip()
